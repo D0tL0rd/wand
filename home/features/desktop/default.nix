@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   imports = [
     ./hyprland.nix
     ./waybar.nix
@@ -9,7 +10,6 @@
     ./dunst.nix
     ./espanso.nix
     ./activitywatch.nix
-    ./redshift.nix
     ./input-remapper.nix
   ];
 
@@ -128,5 +128,4 @@
       "application/json" = "firefox.desktop";
     };
   };
-
 }

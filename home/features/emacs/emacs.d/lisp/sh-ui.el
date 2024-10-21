@@ -61,9 +61,11 @@
   )
 
 ;(load-theme 'modus-vivendi)
+(load-theme 'modus-operandi)
 
 (leaf kaolin-themes
   :ensure t
+  :disabled t
   :config
   (load-theme 'kaolin-mono-dark t))
 

@@ -1,7 +1,10 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   stylix = {
     enable = true;
-    targets = { gnome.enable = true; };
+    targets = {
+      gnome.enable = true;
+    };
 
     cursor = {
       package = pkgs.bibata-cursors;
@@ -39,9 +42,9 @@
 
     image = ./assets/wallpapers/01.png;
 
-    opacity = { terminal = 0.9; };
-
-    polarity = "dark";
-    override = import ./stylix/kaolin_mono_dark.nix;
+    polarity = "light";
+    # override = import ./stylix/modus_operandi.nix;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    targets.alacritty.enable = false;
   };
 }
