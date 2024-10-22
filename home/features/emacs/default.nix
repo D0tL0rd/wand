@@ -43,7 +43,7 @@ let
   ];
   emacsPackage =
     with pkgs;
-    (emacsPackagesFor emacs-unstable).emacsWithPackages (
+    (emacsPackagesFor emacs-pgtk).emacsWithPackages (
       epkgs: with epkgs; [
         # NOTE this is important for languages like C, otherwise you'll
         # face: https://github.com/nix-community/emacs-overlay/issues/341
