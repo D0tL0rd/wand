@@ -61,6 +61,8 @@
 
     tuxguitar
     musescore
+
+    qutebrowser
   ];
 
   # TODO move it to CLI feature.
